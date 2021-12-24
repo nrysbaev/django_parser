@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smartphones</title>
+</head>
+<body>
+<div>
+    <ul>
+        <h2><a href="/parser/">Press to PARSE</a></h2>
+        {% for i in object_list %}
+            <li>
+                <h2><a href="/smartphones/{{ i.id }}/">{{ i.title }}</a></h2>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>

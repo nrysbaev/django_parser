@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anime</title>
+</head>
+<body>
+<div>
+    <ul>
+        <h2><a href="/parser/">Press to PARSE</a></h2>
+        {% for i in object_list %}
+            <li>
+                <h2>{{ i.title }}</h2>
+                <a href="{{ i.image }}">Link</a>
+                <img src="{{ i.image.url }}" alt="">
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>

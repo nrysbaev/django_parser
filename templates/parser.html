@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parser</title>
+</head>
+<body>
+<div>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="PARSE">
+        <h3><a href="/anime/">Anime List</a></h3>
+        <h3><a href="/smartphones/">Smartphones List</a></h3>
+    </form>
+</div>
+</body>
+</html>
